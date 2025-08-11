@@ -2,6 +2,51 @@
 
 这是一个基于和风天气API的MCP（Model Context Protocol）天气查询工具。
 
+## 🚀 快速安装
+
+### 1. 环境准备
+
+**安装 .NET SDK 10**
+```bash
+# macOS
+brew install dotnet
+
+# Windows
+# 下载并安装 .NET 10 SDK: https://dotnet.microsoft.com/download
+
+# Linux
+wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+sudo apt-get update
+sudo apt-get install -y dotnet-sdk-10.0
+```
+
+**安装 MCP AI 模板**
+```bash
+dotnet new install Microsoft.MCP.Templates
+```
+
+### 2. 安装 MCP 服务
+
+使用 dnx 脚本安装天气服务：
+
+```bash
+dnx WeatherService --version 1.0.0-lts --yes --source https://nuget.abp.top/v3/index.json
+```
+
+### 环境变量配置
+
+| 变量名 | 描述 | 示例值 |
+|--------|------|--------|
+| `QW_API_KEY` | 和风天气API密钥 | `0a992fc245144e48ad34de975f25068e` |
+| `QW_HOST` | 和风天气API主机地址 | `my6e4e4pxv.re.qweatherapi.com` |
+
+### 获取API密钥
+
+1. 访问 [和风天气开发者平台](https://dev.qweather.com/)
+2. 注册账号并创建应用
+3. 获取免费API密钥和主机地址
+
 ## 功能特性
 
 - 🌤️ **实时天气查询**: 获取指定城市的当前天气信息
