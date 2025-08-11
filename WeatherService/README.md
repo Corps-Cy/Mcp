@@ -38,8 +38,8 @@ dnx WeatherService --version 1.0.0-lts --yes --source https://nuget.abp.top/v3/i
 
 | 变量名 | 描述 | 示例值 |
 |--------|------|--------|
-| `QW_API_KEY` | 和风天气API密钥 | `0a992fc245144e48ad34de975f25068e` |
-| `QW_HOST` | 和风天气API主机地址 | `my6e4e4pxv.re.qweatherapi.com` |
+| `QW_API_KEY` | 和风天气API密钥 | `test-apikey` |
+| `QW_HOST` | 和风天气API主机地址 | `testapi.re.qweatherapi.com` |
 
 ### 获取API密钥
 
