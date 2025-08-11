@@ -1,0 +1,28 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-07-09/server.json",
+  "description": "一个提供实时天气信息的MCP服务器，支持城市天气查询、坐标天气查询和空气质量指数查询功能。使用OpenWeatherMap API获取准确的天气数据。",
+  "name": "io.github.cy/WeatherService",
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "WeatherService",
+      "version": "1.0.0-lts",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "QWEATHER_API_KEY",
+          "description": "和风天气API密钥，用于获取天气数据。请在 https://dev.qweather.com/ 注册获取免费API密钥。",
+          "required": true,
+          "is_secret": true
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Corps-Cy/Mcp",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0-lts"
+  }
+}
