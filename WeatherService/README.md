@@ -23,7 +23,7 @@ sudo apt-get install -y dotnet-sdk-10.0
 
 **安装 MCP AI 模板**
 ```bash
-dotnet new install Microsoft.MCP.Templates
+dotnet new install Microsoft.Extensions.AI.Templates
 ```
 
 ### 2. 安装 MCP 服务
