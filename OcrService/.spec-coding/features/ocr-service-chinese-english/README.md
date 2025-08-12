@@ -1,0 +1,1 @@
+构建一个健壮的 MCP 服务，能够对图片文件（如 PNG, JPEG）和 PDF 文档执行多语言的光学字符识别（OCR）。使用 Tesseract 作为 OCR 引擎，PdfPig 处理 PDF 文件，支持英文、简体中文、繁体中文和日文。

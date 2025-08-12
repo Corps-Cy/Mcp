@@ -1,0 +1,21 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-07-09/server.json",
+  "description": "An MCP server for performing OCR on images.",
+  "name": "io.github.cy/OcrService",
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "OcrService",
+      "version": "1.0.0-lts",
+      "package_arguments": [],
+      "environment_variables": []
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Corps-Cy/Mcp",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0-lts"
+  }
+}
