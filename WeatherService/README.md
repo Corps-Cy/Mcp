@@ -113,6 +113,28 @@ pnpm add -g @modelcontextprotocol/cli
 }
 ```
 
+```json
+{
+   "WeatherService": {
+      "command": "dnx",
+      "args": [
+         "WeatherService",
+         "--version",
+         "1.0.0-lts",
+         "--yes",
+         "--source",
+         "https://nuget.abp.top/v3/index.json"
+      ],
+      "env": {
+         "QW_API_KEY": "your_api_key_here",
+         "QW_HOST": "your_host_here"
+      },
+      "timeout": 30000
+   }
+}
+```
+
+
 ### 3. 启动MCP服务器
 
 ```bash

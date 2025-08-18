@@ -1,0 +1,40 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schemas/draft/2025-07-09/server.json",
+  "description": "一个提供Ypay支付能力的MCP服务器，可以生成支付订单，并跳转到支付页面。",
+  "name": "io.github.cy/YpayService",
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "YpayService",
+      "version": "1.0.0-lts",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "YPAY_PID",
+          "description": "Ypay商户ID，用于发起支付请求。",
+          "required": true,
+          "is_secret": false
+        },
+        {
+          "name": "YPAY_API_KEY",
+          "description": "Ypay API密钥，用于生成签名。",
+          "required": true,
+          "is_secret": true
+        },
+        {
+          "name": "YPAY_HOST",
+          "description": "自定义Ypay API的域名。如果您有自己的Ypay服务器或需要连接到测试环境，请设置此变量。",
+          "required": false,
+          "is_secret": false
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Corps-Cy/Mcp",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "1.0.0-lts"
+  }
+}
