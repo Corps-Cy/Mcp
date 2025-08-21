@@ -58,3 +58,4 @@ nunit-*.xml
 
 # Mac
 .DS_Store
+**/.DS_Store
